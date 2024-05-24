@@ -4,6 +4,9 @@ body {
 
     box-sizing: border-box;
     margin: 0;
+
+    display: flex;
+    flex-direction: column;
 }
 
 p {
@@ -29,6 +32,12 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    flex-shrink: 0
+}
+
+.nav__button {
+    cursor: pointer;
 }
 
 .bkg--green {
@@ -53,9 +62,10 @@ p {
 
 .main {
     box-sizing: border-box;
+    overflow: hidden;
 
     width: 100%;
-    height: 960px;
+    height: calc(100vh-120px);
     display: flex;
 }
 
@@ -71,33 +81,35 @@ p {
     display: flex;
     justify-content: start;
     gap: 48px;
+
+    cursor: pointer;
 }
 
 .col--column {
     display: block;
 }
 
-.col--shadow-green:hover {
+.col__image--shadow-green:hover {
     box-shadow: 0px 0px 60px 0px #75E658;
 }
 
-.col--shadow-pink:hover {
+.col__image--shadow-pink:hover {
     box-shadow: 0px 0px 60px 0px #FF6EC5;
 }
 
-.col--shadow-red:hover {
+.col__image--shadow-red:hover {
     box-shadow: 0px 0px 60px 0px #FF323A;
 }
 
-.col--shadow-orange:hover {
+.col__image--shadow-orange:hover {
     box-shadow: 0px 0px 60px 0px #FF8C35;
 }
 
-.col--shadow-yellow:hover {
+.col__image--shadow-yellow:hover {
     box-shadow: 0px 0px 60px 0px #FFD33D;
 }
 
-.col--shadow-blue:hover {
+.col__image--shadow-blue:hover {
     box-shadow: 0px 0px 60px 0px #3B7DF3;
 }
 
@@ -123,6 +135,20 @@ p {
 }
 
 .col__image:hover {
-    mix-blend-mode: normal;
+    /* mix-blend-mode: normal; */
+    transition: 0.5s;
+}
+
+.col__image-container {
+    display: inline-block;
+
+    line-height: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    transition: 0.5s;
+}
+
+.col__image-container:hover {
+    background-color: #ffffff;
     transition: 0.5s;
 }
