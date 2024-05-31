@@ -1,3 +1,5 @@
+/* –––––GENERAL––––– */
+
 body {
     width: 100vw;
     height: 100vh;
@@ -22,6 +24,8 @@ p {
     letter-spacing: -0.7px;
 }
 
+/* –––––NAV––––– */
+
 .nav {
     box-sizing: border-box;
 
@@ -39,6 +43,8 @@ p {
 .nav__button {
     cursor: pointer;
 }
+
+/* –––––BACKGROUND COLOR TAGS––––– */
 
 .bkg--green {
     background-color: #75E658;
@@ -60,18 +66,20 @@ p {
     background-color: #FFD33D;
 }
 
+/* –––––SITE STRUCTURE & COLUMN TAGS––––– */
+
 .main {
     box-sizing: border-box;
     overflow: hidden;
 
     width: 100%;
-    height: calc(100vh-120px);
+    height: 100%;
     display: flex;
 }
 
 .col {
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: scroll;
 
     width: 120px;
     height: 100%;
@@ -85,8 +93,31 @@ p {
     cursor: pointer;
 }
 
+.col:hover {
+    width: 100%;
+    animation-name: col--slide;
+    transition: 1s;
+}
+
 .col--column {
     display: block;
+}
+
+.col__text {
+    min-width: 0;
+    overflow-wrap: break-word;
+    margin-bottom: 48px;
+}
+
+.col__image {
+    mix-blend-mode: multiply;
+    transition: 0.5s;
+    height: 100%;
+}
+
+.col__image:hover {
+    /* mix-blend-mode: normal; */
+    transition: 0.5s;
 }
 
 .col__image--shadow-green:hover {
@@ -113,30 +144,12 @@ p {
     box-shadow: 0px 0px 60px 0px #3B7DF3;
 }
 
-.col:hover {
-    width: 100%;
-    animation-name: col--slide;
-    transition: 1s;
-}
-
-.col__text {
-    min-width: 0;
-    overflow-wrap: break-word;
-    margin-bottom: 48px;
-}
-
-.col__image {
-    mix-blend-mode: multiply;
-    transition: 0.5s;
-}
-
 .col__image--justifytoend {
     margin-left: auto;
 }
 
-.col__image:hover {
-    /* mix-blend-mode: normal; */
-    transition: 0.5s;
+.col__image--stretchtowidth {
+    width: 100%;
 }
 
 .col__image-container {
@@ -151,4 +164,37 @@ p {
 .col__image-container:hover {
     background-color: #ffffff;
     transition: 0.5s;
+}
+
+.col__image-container--nohover {
+    pointer-events: none;
+}
+
+.col__image-container--gap {
+    margin-bottom: 48px;
+}
+
+/* –––––ABOUT PROJECT COLUMN TAGS––––– */
+
+.col-about {
+    box-sizing: border-box;
+    overflow: hidden;
+
+    height: 100%;
+    padding: 48px;
+    transition: 1s;
+
+    display: block;
+}
+
+.col-about--big {
+    width: 65%;
+}
+
+.col-about--small {
+    width: 35%;
+}
+
+.col-about__textbox {
+    width: 60%;
 }

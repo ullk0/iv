@@ -4,23 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Море волнуется</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+
+    <!-- NAV BAR -->
+
     <div class="nav bkg--green">
         <p>Море</p>
         <p onclick="window.location.href='./about.html';" class="nav__button">?</p>
         <p>волнуется</p>
     </div>
+
+    <!-- MAIN SECTION -->
+
     <div class="main">
-        <div class="col bkg--pink">
+
+        <!-- SHOP -->
+
+        <div class="col bkg--pink" onclick="window.location.href='./shop.html';">
             <p class="col__text">Магазин</p>
             <p class="col__image-container col__image--shadow-green col__image--justifytoend"><img class="col__image"
                     src="./img/record.png"></p>
         </div>
-        <div class="col bkg--yellow">
+
+        <!-- EVENTS -->
+
+        <div class="col bkg--yellow" onclick="window.location.href='./events.html';">
             <p class="col__text">События</p>
             <p class="col__image-container col__image--shadow-pink col__image--justifytoend"><img class="col__image"
                     src="./img/poster-gorki1.png">
@@ -28,10 +40,19 @@
             <p class="col__image-container col__image--shadow-pink"><img class="col__image"
                     src="./img/poster-kvart1.png"></p>
         </div>
-        <div class="col col--column bkg--orange">
+
+        <!-- MRC -->
+
+        <div class="col col--column bkg--orange" onclick="window.location.href='./mrc.html';">
             <p class="col__text">MRC</p>
-            <p class="col__image-container col__image--shadow-blue"><img class="col__image" src="./img/mrc-1.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-blue"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-blue"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-blue"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
         </div>
+
     </div>
 </body>
 
