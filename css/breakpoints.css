@@ -1,0 +1,188 @@
+@media (min-width: 0px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.2rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 60px;
+    }
+
+    .nav {
+        height: 60px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 24px;
+    }
+
+    .col-about__textbox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.2rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 70px;
+    }
+
+    .nav {
+        height: 70px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 28px;
+    }
+
+    .col-about__textbox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.3rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 80px;
+    }
+
+    .nav {
+        height: 80px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 32px;
+    }
+
+    .col-about__textbox {
+        width: 90%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.4rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 90px;
+    }
+
+    .nav {
+        height: 90px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 36px;
+    }
+
+    .col-about__textbox {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.5rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 100px;
+    }
+
+    .nav {
+        height: 100px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 40px;
+    }
+
+    .col-about__textbox {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.6rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 110px;
+    }
+
+    .nav {
+        height: 110px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 44px;
+    }
+
+    .col-about__textbox {
+        width: 65%;
+    }
+}
+
+@media (min-width: 1700px) {
+
+    .col__text,
+    .nav__text {
+        font-size: 1.8rem;
+        line-height: 100%;
+    }
+
+    .col {
+        width: 120px;
+    }
+
+    .nav {
+        height: 120px;
+    }
+
+    .col,
+    .nav,
+    .col-about {
+        padding: 48px;
+    }
+
+    .col-about__textbox {
+        width: 60%;
+    }
+}
