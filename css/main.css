@@ -93,14 +93,16 @@ p {
     display: flex;
     justify-content: start;
     gap: 48px;
-
-    cursor: pointer;
 }
 
 .col:hover {
     width: 100%;
     animation-name: col--slide;
     transition: 1s;
+}
+
+.cursor--pointer {
+    cursor: pointer;
 }
 
 .col--column {
@@ -200,5 +202,21 @@ p {
 }
 
 .col-about__textbox {
-    width: 60%;
+    max-width: 60%
+}
+
+/* –––––REGISTER FORM––––– */
+
+.reg__box {
+    background: none;
+    border: 1px solid #000;
+
+    mix-blend-mode: multiply;
+
+    margin-right: 32px;
+    padding: 16px 24px 16px 24px;
+}
+
+.reg__box:focus {
+    box-shadow: 0px 0px 60px 0px #FF323A;
 }

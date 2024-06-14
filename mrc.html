@@ -14,7 +14,7 @@
 
     <div class="nav bkg--red">
         <p class="nav__text">Море</p>
-        <p onclick="window.location.href='./index.html';" class="nav__button nav__text">⌂</p>
+        <p onclick="window.location.href='./index.html';" class="nav__button nav__text cursor--pointer">⌂</p>
         <p class="nav__text">волнуется</p>
     </div>
 
@@ -25,17 +25,25 @@
         <!-- PICS -->
 
         <div class="col col--column bkg--blue">
-            <p class="col__image-container col__image-container--gap col__image--shadow-green"><img
+            <p class="col__image-container col__image-container--gap col__image--shadow-yellow"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-red"><img
-                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-orange"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-2.png"></p>
             <p class="col__image-container col__image-container--gap col__image--shadow-pink"><img
-                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-7.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-red"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-3.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-yellow"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-4.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-red"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-5.png"></p>
+            <p class="col__image-container col__image-container--gap col__image--shadow-orange"><img
+                    class="col__image col__image--stretchtowidth" src="./img/mrc-6.png"></p>
         </div>
 
         <!-- DESCRIPTION -->
 
-        <div class="col bkg--pink" onclick="window.location.href='./events.html';">
+        <div class="col bkg--pink">
             <p class="col__text col-about__textbox">Центр воспоминаний MRC (Memory Recurrence Center) — пространство для
                 самостоятельной
                 рефлексии и проживания детских
@@ -58,8 +66,8 @@
 
         <!-- MANIFESTO -->
 
-        <div class="col bkg--green">
-            <p class="col__text">
+        <div class="col col--column bkg--green">
+            <p class="col__text col-about__textbox">
                 Memory Recurrence Centre manifesto
                 <br><br>
                 Память<br>
@@ -90,18 +98,26 @@
 
         <!-- REGISTER -->
 
-        <div class="col col--column bkg--yellow" onclick="window.location.href='./mrc.html';">
-            <p class="col__text">MRC</p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-blue"><img
-                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-red"><img
-                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-pink"><img
-                    class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
+        <div class="col col--column bkg--yellow">
+            <p class=" col__text">Регистрация</p>
+            <form name="register">
+                <input type="text" class="reg__box col__text" placeholder="Имя" required>
+                <input type="text" class="reg__box col__text reg__box--block" placeholder="Фамилия" required>
+                <input type="text" class="reg__box col__text" placeholder="Электронная почта" required>
+                <input type="date" class="reg__box col__text" name="date" id="datepick" min="2028-09-01" required>
+                <select class="reg__box" name="time" id="timepick">
+                    <option>8:00 – 10:00</option>
+                    <option>11:00 – 13:00</option>
+                    <option>14:00 – 16:00</option>
+                    <option>17:00 – 19:00</option>
+                    <option>20:00 – 22:00</option>
+                </select>
+                <button type="submit" class="reg__box col__text">
+                    <p>☞ Отправить заявку</p>
+                </button>
+            </form>
         </div>
-
-    </div>
-
+        <script src="js/mrc.js"></script>
 </body>
 
 </html>
