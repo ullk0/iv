@@ -24,6 +24,10 @@ p {
     letter-spacing: -0.7px;
 }
 
+::placeholder {
+    color: grey;
+}
+
 /* –––––NAV––––– */
 
 .nav {
@@ -101,6 +105,14 @@ p {
     transition: 1s;
 }
 
+#col--reg {
+    transition: 1s 4s;
+}
+
+#col--reg:hover {
+    transition: 1s;
+}
+
 .cursor--pointer {
     cursor: pointer;
 }
@@ -112,7 +124,6 @@ p {
 .col__text {
     min-width: 0;
     overflow-wrap: break-word;
-    margin-bottom: 48px;
 }
 
 .col__image {
@@ -122,7 +133,6 @@ p {
 }
 
 .col__image:hover {
-    /* mix-blend-mode: normal; */
     transition: 0.5s;
 }
 
@@ -167,6 +177,10 @@ p {
     transition: 0.5s;
 }
 
+.item--marginbottom {
+    margin-bottom: 48px;
+}
+
 .col__image-container:hover {
     background-color: #ffffff;
     transition: 0.5s;
@@ -174,10 +188,6 @@ p {
 
 .col__image-container--nohover {
     pointer-events: none;
-}
-
-.col__image-container--gap {
-    margin-bottom: 48px;
 }
 
 /* –––––ABOUT PROJECT COLUMN TAGS––––– */
@@ -208,15 +218,41 @@ p {
 /* –––––REGISTER FORM––––– */
 
 .reg__box {
+    appearance: none;
+    padding-block: 0;
+    padding-inline: 0;
+    box-sizing: border-box;
+
+    width: 330px;
+    height: 60px;
+
     background: none;
-    border: 1px solid #000;
+    border: 2px solid #000;
 
     mix-blend-mode: multiply;
 
     margin-right: 32px;
-    padding: 16px 24px 16px 24px;
+    margin-bottom: 32px;
+    padding: 14px 22px 14px 22px;
 }
 
 .reg__box:focus {
     box-shadow: 0px 0px 60px 0px #FF323A;
+}
+
+#reg__box--email {
+    width: 528px;
+}
+
+.reg__box--block {
+    display: block;
+}
+
+.reg__submit {
+    background: none;
+    border: none;
+}
+
+#timepick {
+    color: grey;
 }

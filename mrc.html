@@ -25,19 +25,19 @@
         <!-- PICS -->
 
         <div class="col col--column bkg--blue">
-            <p class="col__image-container col__image-container--gap col__image--shadow-yellow"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-yellow"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-1.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-orange"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-orange"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-2.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-pink"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-pink"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-7.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-red"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-red"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-3.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-yellow"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-yellow"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-4.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-red"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-red"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-5.png"></p>
-            <p class="col__image-container col__image-container--gap col__image--shadow-orange"><img
+            <p class="col__image-container item--marginbottom col__image--shadow-orange"><img
                     class="col__image col__image--stretchtowidth" src="./img/mrc-6.png"></p>
         </div>
 
@@ -67,7 +67,7 @@
         <!-- MANIFESTO -->
 
         <div class="col col--column bkg--green">
-            <p class="col__text col-about__textbox">
+            <p class="col__text col-about__textbox item--marginbottom">
                 Memory Recurrence Centre manifesto
                 <br><br>
                 Память<br>
@@ -98,22 +98,26 @@
 
         <!-- REGISTER -->
 
-        <div class="col col--column bkg--yellow">
-            <p class=" col__text">Регистрация</p>
+        <div class="col col--column bkg--yellow" id="col--reg">
+            <p class=" col__text item--marginbottom">Регистрация</p>
             <form name="register">
                 <input type="text" class="reg__box col__text" placeholder="Имя" required>
-                <input type="text" class="reg__box col__text reg__box--block" placeholder="Фамилия" required>
-                <input type="text" class="reg__box col__text" placeholder="Электронная почта" required>
-                <input type="date" class="reg__box col__text" name="date" id="datepick" min="2028-09-01" required>
-                <select class="reg__box" name="time" id="timepick">
+                <input type="text" class="reg__box col__text" placeholder="Фамилия" required>
+                <input type="text" class="reg__box col__text reg__box--block" placeholder="Электронная почта" required
+                    id="reg__box--email">
+                <input placeholder="⇩ Дата" class="reg__box col__text" type="text" name="date" id="datepick"
+                    min="2028-09-01" onfocus="(this.type='date')" required>
+                <select class="reg__box col__text" name="time" id="timepick" onfocus="(this.style.color='#000')"
+                    onblur="(this.style.color='#000')">
+                    <option hidden>⇩ Сеанс</option>
                     <option>8:00 – 10:00</option>
                     <option>11:00 – 13:00</option>
                     <option>14:00 – 16:00</option>
                     <option>17:00 – 19:00</option>
                     <option>20:00 – 22:00</option>
                 </select>
-                <button type="submit" class="reg__box col__text">
-                    <p>☞ Отправить заявку</p>
+                <button type="submit" class="reg__submit col__text reg__box--block cursor--pointer">
+                    <p class="col__text">☞ Отправить заявку</p>
                 </button>
             </form>
         </div>
