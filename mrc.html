@@ -99,11 +99,11 @@
         <!-- REGISTER -->
 
         <div class="col col--column bkg--yellow" id="col--reg">
-            <p class=" col__text item--marginbottom">Регистрация</p>
-            <form name="register">
+            <form name="register" id="register" onsubmit="submitForm()">
+                <p class=" col__text item--marginbottom">Регистрация</p>
                 <input type="text" class="reg__box col__text" placeholder="Имя" required>
                 <input type="text" class="reg__box col__text" placeholder="Фамилия" required>
-                <input type="text" class="reg__box col__text reg__box--block" placeholder="Электронная почта" required
+                <input type="email" class="reg__box col__text reg__box--block" placeholder="Электронная почта" required
                     id="reg__box--email">
                 <input placeholder="⇩ Дата" class="reg__box col__text" type="text" name="date" id="datepick"
                     min="2028-09-01" onfocus="(this.type='date')" required>
@@ -120,6 +120,10 @@
                     <p class="col__text">☞ Отправить заявку</p>
                 </button>
             </form>
+
+            <div id="reg--onsubmit">
+                <p class="col__text">✓ Спасибо! Подтверждение регистрации придет на электронную почту</p>
+            </div>
         </div>
         <script src="js/mrc.js"></script>
 </body>

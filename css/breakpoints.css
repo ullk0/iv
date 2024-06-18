@@ -20,18 +20,21 @@
         padding: 24px;
     }
 
+    .item--marginbottom {
+        margin-bottom: 24px;
+    }
+
     .col-about__textbox {
         width: 100%;
+    }
+
+    .reg__box,
+    #reg__box--email {
+        width: 330px;
     }
 }
 
 @media (min-width: 576px) {
-
-    .col__text,
-    .nav__text {
-        font-size: 1.2rem;
-        line-height: 100%;
-    }
 
     .col {
         width: 70px;
@@ -47,9 +50,10 @@
         padding: 28px;
     }
 
-    .col-about__textbox {
-        width: 100%;
+    .item--marginbottom {
+        margin-bottom: 28px;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -72,6 +76,10 @@
     .nav,
     .col-about {
         padding: 32px;
+    }
+
+    .item--marginbottom {
+        margin-bottom: 32px;
     }
 
     .col-about__textbox {
@@ -101,6 +109,10 @@
         padding: 36px;
     }
 
+    .item--marginbottom {
+        margin-bottom: 36px;
+    }
+
     .col-about__textbox {
         width: 80%;
     }
@@ -128,8 +140,16 @@
         padding: 40px;
     }
 
+    .item--marginbottom {
+        margin-bottom: 40px;
+    }
+
     .col-about__textbox {
         width: 70%;
+    }
+
+    #reg__box--email {
+        width: 528px;
     }
 }
 
@@ -153,6 +173,10 @@
     .nav,
     .col-about {
         padding: 44px;
+    }
+
+    .item--marginbottom {
+        margin-bottom: 44px;
     }
 
     .col-about__textbox {
@@ -180,6 +204,10 @@
     .nav,
     .col-about {
         padding: 48px;
+    }
+
+    .item--marginbottom {
+        margin-bottom: 48px;
     }
 
     .col-about__textbox {

@@ -227,7 +227,8 @@ p {
     height: 60px;
 
     background: none;
-    border: 2px solid #000;
+    outline: none;
+    border: 1.6px solid #000;
 
     mix-blend-mode: multiply;
 
@@ -238,6 +239,10 @@ p {
 
 .reg__box:focus {
     box-shadow: 0px 0px 60px 0px #FF323A;
+}
+
+.col:hover .reg__box {
+    max-width: 100%;
 }
 
 #reg__box--email {
@@ -255,4 +260,12 @@ p {
 
 #timepick {
     color: grey;
+}
+
+#register {
+    display: block;
+}
+
+#reg--onsubmit {
+    display: none;
 }
