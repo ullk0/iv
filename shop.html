@@ -8,54 +8,63 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- NAV BAR -->
+<body>
 
-<div class="nav bkg--yellow">
-    <p class="nav__text">Море</p>
-    <p onclick="window.location.href='./index.html';" class="nav__button nav__text">⌂</p>
-    <p class="nav__text">волнуется</p>
-</div>
+    <!-- NAV BAR -->
 
-<!-- MAIN SECTION -->
-
-<div class="main">
-
-    <!-- SHOP -->
-
-    <div class="col bkg--orange">
-        <p class="col__text">Футболка <br><br> 1200₽</p>
-        <p class="col__image-container col__image--shadow-green col__image--justifytoend"><img class="col__image"
-                src="./img/record.png"></p>
+    <div class="nav bkg--yellow">
+        <p class="nav__text">Море</p>
+        <p onclick="window.location.href='./index.html';" class="nav__button nav__text">⌂</p>
+        <p class="nav__text">волнуется</p>
     </div>
 
-    <div class="col bkg--green">
-        <p class="col__text">Шоппер <br><br> 800₽</p>
-        <p class="col__image-container col__image--shadow-pink col__image--justifytoend"><img class="col__image"
-                src="./img/record.png"></p>
-    </div>
+    <!-- MAIN SECTION -->
 
-    <div class="col bkg--pink">
-        <p class="col__text">Найлейки <br><br> 200₽</p>
-        <p class="col__image-container col__image--shadow-yellow col__image--justifytoend"><img class="col__image"
-                src="./img/record.png"></p>
-    </div>
+    <div class="main">
 
-    <div class="col bkg--blue">
-        <p class="col__text">Открытки <br><br> 200₽</p>
-        <p class="col__image-container col__image--shadow-pink col__image--justifytoend"><img class="col__image"
-                src="./img/record.png"></p>
-    </div>
+        <!-- SHOP -->
 
-    <div class="col bkg--red">
-        <p class="col__text">Блокнот <br><br> 250₽</p>
-        <p class="col__image-container col__image--shadow-orange col__image--justifytoend"><img class="col__image"
-                src="./img/record.png"></p>
-    </div>
+        <div class="col bkg--orange">
+            <p class="col__text">Футболка <br><br> 1200₽</p>
+            <p class="col__image-container col__image--shadow-green col__image--justifytoend"><img class="col__image"
+                    src="./img/merch-t.png"></p>
+        </div>
 
-    <div class="col bkg--green">
-        <p class="col__text">Винил <br><br> 2000₽</p>
-        <p class="col__image-container col__image--shadow-red col__image--justifytoend"><img class="col__image"
-                src="./img/record.png"></p>
-    </div>
+        <div class="col bkg--green">
+            <p class="col__text">Шоппер <br><br> 800₽</p>
+            <p class="col__image-container col__image--shadow-pink col__image--justifytoend"><img class="col__image"
+                    src="./img/merch-shopper.png"></p>
+        </div>
 
-</div>
+        <div class="col bkg--pink">
+            <p class="col__text">Найлейки <br><br> 200₽</p>
+            <p class="col__image-container col__image--shadow-yellow col__image--justifytoend"><img class="col__image"
+                    src="./img/merch-stickers.png"></p>
+        </div>
+
+        <div class="col bkg--blue">
+            <p class="col__text">Открытки <br><br> 200₽</p>
+            <p class="col__image-container col__image--shadow-pink col__image--justifytoend cursor--pointer"><img
+                    class="col__image" id="cards-slideshow" src="./img/merch-card-1.png" onclick="cardsSlideshow()">
+            </p>
+        </div>
+
+        <div class=" col bkg--red">
+            <p class="col__text">Блокнот <br><br> 250₽</p>
+            <p class="col__image-container col__image--shadow-orange col__image--justifytoend"><img class="col__image"
+                    src="./img/merch-notebook.png"></p>
+        </div>
+
+        <div class="col bkg--green">
+            <p class="col__text">Винил <br><br> 2000₽</p>
+            <p class="col__image-container col__image--shadow-red col__image--justifytoend cursor--pointer"><img
+                    class=" col__image" id="records-slideshow" src="./img/merch-record-1.png"
+                    onclick="recordsSlideshow()">
+            </p>
+        </div>
+
+    </div>
+    <script src="./js/shop.js"></script>
+</body>
+
+</html>

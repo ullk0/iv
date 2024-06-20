@@ -102,7 +102,7 @@ p {
 .col:hover {
     width: 100%;
     animation-name: col--slide;
-    transition: 1s;
+    transition: 1.2s;
 }
 
 #col--reg {
@@ -211,10 +211,6 @@ p {
     width: 35%;
 }
 
-.col-about__textbox {
-    max-width: 60%
-}
-
 /* –––––REGISTER FORM––––– */
 
 .reg__box {
@@ -269,4 +265,41 @@ p {
 
 #reg--onsubmit {
     display: none;
+}
+
+/* –––––BOOKLET OVERLAY––––– */
+
+.booklet-container {
+    display: inline-block;
+    position: relative;
+}
+
+.booklet-overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    z-index: 1;
+}
+
+.booklet-overlay--back {
+    cursor: w-resize;
+}
+
+.booklet-overlay--next {
+    cursor: e-resize;
+}
+
+.booklet-overlay--back,
+.booklet-overlay--next {
+    display: inline-block;
+    height: 100%;
+    width: 50%;
+}
+
+.booklet-container:hover #booklet-slideshow-container {
+    background-color: white !important;
+    transition: 0.5s;
+    box-shadow: 0px 0px 60px 0px #3B7DF3;
 }

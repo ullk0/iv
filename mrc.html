@@ -91,9 +91,17 @@
                 <br><br>
                 Чтобы услышать прошлое, настоящее должно молчать.
             </p>
-            <p class="col__image-container col__image--shadow-pink col__image--justifytoend"><img class="col__image"
-                    src="./img/2-4.png">
-            </p>
+
+            <div class="booklet-container">
+                <div class="booklet-overlay">
+                    <div class="booklet-overlay--back" onclick="bookletSlideshowBack()"></div>
+                    <div class="booklet-overlay--next" onclick="bookletSlideshowNext()">
+                    </div>
+                </div>
+                <p class="col__image-container" id="booklet-slideshow-container"><img
+                        class="col__image col__image--stretchtowidth" id="booklet-slideshow" src="./img/scan-1.png">
+                </p>
+            </div>
         </div>
 
         <!-- REGISTER -->
@@ -124,8 +132,9 @@
             <div id="reg--onsubmit">
                 <p class="col__text">✓ Спасибо! <br> Подтверждение регистрации придет на электронную почту</p>
             </div>
+
         </div>
-        <script src="js/mrc.js"></script>
+        <script src="./js/mrc.js"></script>
 </body>
 
 </html>
